@@ -20,13 +20,13 @@ Red Horizon Team - Swift Challenge
 
 
     var R = 6371e3; // metres
-    var lat1 = lat1.toRadians();
-    var lat2 = lat2.toRadians();
+    var rLat1 = lat1.toRadians();
+    var rLat2 = lat2.toRadians();
     var dLat = (lat2-lat1).toRadians();
     var dLon = (lon2-lon1).toRadians();
 
     var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-    Math.cos(lat1) * Math.cos(lat2) *
+    Math.cos(rLat1) * Math.cos(rLat2) *
     Math.sin(dLon/2) * Math.sin(dLon/2);
     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 
