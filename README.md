@@ -10,8 +10,9 @@
     - Import the necessary pods for the networking library
 
 4)Call the first rest endpoint to obtain an array of GPS latitude,longitude points in the JSON format. The data will be received in the following format
-    - GET https://labs.gm.com/interview/api/location
-    [{"latitude":"X1", "longitude":"Y1"}, {"latitude":"X2", "longitude":"Y2"}...]
+
+        - GET https://labs.gm.com/interview/api/location
+        [{"latitude":"X1", "longitude":"Y1"}, {"latitude":"X2", "longitude":"Y2"}...]
 
 5)Use the IOS location manager to obtain your current location.
 
