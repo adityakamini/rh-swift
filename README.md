@@ -16,22 +16,7 @@
 
 5)Use the IOS location manager to obtain your current location.
 
-6)Calculate the linear distance between each set of GPS coordinates received through the rest endpoint and your current location. You can use the formula below to get distance in meters
-
-
-    var R = 6371e3; // metres
-    var rLat1 = lat1.toRadians();
-    var rLat2 = lat2.toRadians();
-    var dLat = (lat2-lat1).toRadians();
-    var dLon = (lon2-lon1).toRadians();
-
-    var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-    Math.cos(rLat1) * Math.cos(rLat2) *
-    Math.sin(dLon/2) * Math.sin(dLon/2);
-    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-
-    var d = R * c;
-
+6)Calculate the linear distance between each set of GPS coordinates received through the rest endpoint and your current location.
 
 7)Once you have the closest location, use the rest endpoint below to obtain the geocoded address corresponding to the closest GPS coordinates
     
